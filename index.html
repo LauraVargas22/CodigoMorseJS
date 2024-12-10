@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Codigo Morse</title>
+</head>
+<body>
+    <div class="container">
+        <h1>DICCIONARIO CODIGO MORSE</h1>
+        <div class="container1">
+            <label for="userText">Texto a Codigo Morse</label>
+            <input type="text" id="userText" placeholder="Ingrese el texto a traducir..." required>
+            <button onclick="translateCodMorse()">Traducir</button>
+            <div id="translateText"></div>
+        </div>
+        <div class="container2">
+            <label for="userCode">Codigo Morse a Texto</label>
+            <input type="text" id="userCode" placeholder="Ingrese el codigo a traducir..." required>
+            <button onclick="translateText()">Traducir</button>
+            <div id="translateCod"></div>
+        </div>
+    </div>
+    <script src="js/java.js"></script>
+</body>
+</html>
