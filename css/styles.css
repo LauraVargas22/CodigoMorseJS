@@ -32,10 +32,7 @@ body {
 
 
 .container1{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: center;
     color: white;
     margin-top: 3rem;
     font-weight: 300;
@@ -53,9 +50,36 @@ body {
     font-size: 2rem;
 }
 
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
 #userText {
     border: #1c143f;
     background: #352c61; 
+    width: 80%;
+    height: 15vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#userText:hover{
+    background: white;
+    color: black;
+    text-align: center;
+    font-family: "Rancho", cursive;
+    width: 80%;
+}
+
+#userText:not(:placeholder-shown) {
+    background: #352c61;
+    color: white;
+    text-align: center;
+    font-family: "Rancho", cursive;
+    width: 80%;
 }
 
 input::placeholder {
@@ -71,6 +95,7 @@ input:hover{
     color: white;
     text-align: center;
     font-family: "Rancho", cursive;
+    width: 80%;
 }
 
 .button_slide {
@@ -78,7 +103,7 @@ input:hover{
     color: black;
     border: 2px solid #1c143f;
     border-radius: 0px;
-    padding: 1rem;
+    padding: 0.5rem;
     display: inline-block;
     font-family: "Rancho", cursive;
     font-size: 2rem;
@@ -88,6 +113,7 @@ input:hover{
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    border-radius: 10px;
   }
   
   .slide_left:hover {
@@ -101,25 +127,34 @@ input:hover{
     text-align: center;
   }
 
-input {
-    width: 80%;
-    height: 15vh;
-}
-
 #translateText {
-    display: flex;
-    justify-content: column;
-    justify-content: center;
-    align-items: center;
     background: #352c61;
     color: white;
     border: 1px solid #1c143f;
     width: 80%;
-    height: 15vh;  
+    height: 15vh; 
+    color: white;
+    font-size: 2rem;
+    font-family: "Rancho", cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+
 }
 
 label {
     font-family: "Rancho", cursive;
     font-size: 2.5rem;
     letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+   #translateText {
+    margin-top: 2rem;
+   }
+}
+@media (max-width: 480px) {
+    
 }

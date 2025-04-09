@@ -8,15 +8,14 @@
     <title>Codigo Morse</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">MORSE DICTIONARY</h1>
+    <h1 class="title">MORSE DICTIONARY</h1>
         <div class="container1">
             <label for="userText">From text to Morse</label>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
                 <div class="col">
                     <input type="text" id="userText" placeholder="Ingrese el texto a traducir..." required>
                 </div>
-                <div class="row">
+                <div class="col">
                     <div id="translateText"></div>
                 </div>
             </div>
@@ -28,7 +27,6 @@
             <button class="button_slide slide_left" onclick="translateTexttoMorse()">Traducir</button>
             <div id="translateCod"></div>
         </div>
-    </div>
     <script src="js/java.js"></script>
 </body>
 </html>
