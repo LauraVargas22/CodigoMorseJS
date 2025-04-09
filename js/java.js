@@ -21,19 +21,24 @@ function translateCodMorse () {
     translateText.textContent = `El codigo Morse es: ${translateMorse}`;
 }
 
+
 function translateTexttoMorse () {
-    const userCode = document.getElementById('userCode').value.toLowerCase();
+    const userCode = document.getElementById('userCode').value.trim();
     const translateCod = document.getElementById('translateCod');
+    
+    const morseToText = {};
+    
+    for (const key in dictionary) {
+        const value = dictionary[key];
+        morseToText[value] = key;
+    }
 
+    const morseChars = userCode.split(" ");
     let translateText = "";
-    const morseCode = userCode.split("");
 
-    for (let i = 0; i < userCode.length; i++) {
-        const symbols = morseCode[i];
-        translateText += dictionary[symbols] || "?";
-        if (i < userCode.length - 1) {
-            translateText += "";
-        }
+    for (let i = 0; i < morseChars.length; i++) {
+        const morseChar = morseChars[i];
+        translateText += morseToText[morseChar] || "?";
     }
 
     translateCod.textContent = `El texto es: ${translateText}`;

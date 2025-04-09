@@ -13,19 +13,25 @@
             <label for="userText">From text to Morse</label>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
                 <div class="col">
-                    <input type="text" id="userText" placeholder="Ingrese el texto a traducir..." required>
+                    <input type="text" class="texto" id="userText" placeholder="Ingrese el texto a traducir..." required>
                 </div>
                 <div class="col">
-                    <div id="translateText"></div>
+                    <div class="translate" id="translateText"></div>
                 </div>
             </div>
             <button class="button_slide slide_left" onclick="translateCodMorse()">Traducir</button>
         </div>
         <div class="container2">
             <label for="userCode">From morse to text</label>
-            <input type="text" id="userCode" placeholder="Ingrese el codigo a traducir..." required>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <input type="text" class="texto" id="userCode" placeholder="Ingrese el codigo a traducir..." required>
+                </div>
+                <div class="col">
+                    <div class="translate" id="translateCod"></div>
+                </div>
+            </div>
             <button class="button_slide slide_left" onclick="translateTexttoMorse()">Traducir</button>
-            <div id="translateCod"></div>
         </div>
     <script src="js/java.js"></script>
 </body>
