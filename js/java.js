@@ -18,7 +18,7 @@ function translateCodMorse () {
 
     translateMorse = translateMorse.trim();
 
-    translateText.textContent = `El codigo Morse es: ${translateMorse}`;
+    translateText.textContent = `${translateMorse}`;
 }
 
 
@@ -41,7 +41,7 @@ function translateTexttoMorse () {
         translateText += morseToText[morseChar] || "?";
     }
 
-    translateCod.textContent = `El texto es: ${translateText}`;
+    translateCod.textContent = ` ${translateText}`;
 }
 
 
